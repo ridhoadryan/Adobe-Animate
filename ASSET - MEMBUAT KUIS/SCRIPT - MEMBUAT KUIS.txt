@@ -1,0 +1,134 @@
+---FRAME 1---
+
+stop();
+
+var nilai:int = 0 ;
+
+mulai.addEventListener(MouseEvent.CLICK, mulaiklik);
+function mulaiklik(event:MouseEvent):void
+{
+	nextFrame();
+}
+
+---FRAME 2---
+
+a1.addEventListener(MouseEvent.CLICK, a1klik);
+function a1klik(event:MouseEvent):void
+{
+	nextFrame();
+}
+
+b1.addEventListener(MouseEvent.CLICK, b1klik);
+function b1klik(event:MouseEvent):void
+{
+	nilai = nilai + 25;
+	nextFrame();
+}
+
+c1.addEventListener(MouseEvent.CLICK, c1klik);
+function c1klik(event:MouseEvent):void
+{
+	nextFrame();
+}
+
+
+---FRAME 3---
+
+a2.addEventListener(MouseEvent.CLICK, a2klik);
+function a2klik(event:MouseEvent):void
+{
+	nilai = nilai + 25;
+	nextFrame();
+}
+
+b2.addEventListener(MouseEvent.CLICK, b2klik);
+function b2klik(event:MouseEvent):void
+{
+	
+	nextFrame();
+}
+
+c2.addEventListener(MouseEvent.CLICK, c2klik);
+function c2klik(event:MouseEvent):void
+{
+	nextFrame();
+}
+
+
+---FRAME 4---
+
+a3.addEventListener(MouseEvent.CLICK, a3klik);
+function a3klik(event:MouseEvent):void
+{
+	
+	nextFrame();
+}
+
+b3.addEventListener(MouseEvent.CLICK, b3klik);
+function b3klik(event:MouseEvent):void
+{
+	
+	nextFrame();
+}
+
+c3.addEventListener(MouseEvent.CLICK, c3klik);
+function c3klik(event:MouseEvent):void
+{
+	nilai = nilai + 25;
+	nextFrame();
+}
+
+
+---FRAME 5---
+
+a4.addEventListener(MouseEvent.CLICK, a4klik);
+function a4klik(event:MouseEvent):void
+{
+	nilai = nilai + 25;
+	nextFrame();
+}
+
+b4.addEventListener(MouseEvent.CLICK, b4klik);
+function b4klik(event:MouseEvent):void
+{
+	
+	nextFrame();
+}
+
+c4.addEventListener(MouseEvent.CLICK, c4klik);
+function c4klik(event:MouseEvent):void
+{
+	
+	nextFrame();
+}
+
+
+---FRAME 6---
+
+nilaiakhir.text = String (nilai);
+
+sisenang.visible = false;
+sisedih.visible = false;
+sikecewa.visible = false;
+
+if (nilai > 50)
+{
+	sisenang.visible = true;
+}
+
+if (nilai == 50)
+{
+	sikecewa.visible = true;
+}
+
+if (nilai < 50)
+{
+	sisedih.visible = true;
+}
+
+
+exit.addEventListener(MouseEvent.CLICK, exitklik);
+function exitklik(event:MouseEvent):void
+{
+	gotoAndStop(1);
+}
